@@ -29,6 +29,10 @@ h1, h2, h3 {
     padding: 10px;
     margin: 5px;
 }
+#MainMenu {visibility: hidden;}
+header[data-testid="stHeader"] {visibility: hidden;}
+.stDeployButton {display: none;}
+[data-testid="manage-app-button"] {display: none;}
 </style>
 """, unsafe_allow_html=True)
 
