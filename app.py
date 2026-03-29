@@ -37,7 +37,7 @@ header[data-testid="stHeader"] {visibility: hidden;}
 """, unsafe_allow_html=True)
 
 # Load data
-df = pd.read_csv('merged_shark_data.csv')
+df = pd.read_csv('data/merged_shark_data.csv')
 df = df.dropna()
 
 # Compute fits

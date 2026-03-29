@@ -1,0 +1,22 @@
+run = "streamlit run app.py --server.port 8080 --server.address 0.0.0.0"
+modules = ["python-3.10"]
+
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "python3"
+
+[languages.python3]
+pattern = "**/*.py"
+
+[debugger]
+support = true
+
+[debugger.interactive]
+transport = "localhost:0"
+startCommand = ["dap-python", ""]
+
+[packager]
+language = "python3"
+ignoreFiles = [".git"]
